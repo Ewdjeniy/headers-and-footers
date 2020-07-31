@@ -5,3 +5,46 @@ html
         title Headers and footers
     body
         include ./header/header.pug
+        div(style="height: 30px;")
+        
+        header(class="header header__authetication_registrated")
+            div(class="header__logo-wrapper")
+                include ./logo/logo.pug
+            include ./header/__nav/header__nav.pug
+            include ./header/__authentication/header__authentication.pug
+            
+        div(style="height: 30px;")
+        include ./footer/footer.pug
+        
+        div(style="height: 30px;")
+        footer(class="footer footer_size_s")
+            div(class="footer__copyright")
+                div(class="footer__logo-wrapper")
+                    include ./logo/logo.pug
+                span(class="footer__copyright-span") Copyright &copy; 2018 Toxin отель. Все права зачищены.
+                include ./footer/__awesome-icons/footer__awesome-icons.pug
+            div(class="footer__nav")
+                include ./logo/logo.pug
+                p(class="footer__best-hotel").
+                    Бронирование номеров в лучшем отеле 2019 года по версии ассоциации &laquo;Отельные взгляды&raquo;
+                h3(class="footer__nav-header") Навигация
+                a(class="footer__about-us-link" href="#") О нас
+                a(class="footer__news-link" href="#") Новости
+                a(class="footer__support-link" href="#") Служба поддержки
+                a(class="footer__services-link" href="#") Услуги
+
+                h3(class="footer__about-us-header") О нас
+                a(class="footer__about-service-link" href="#") О сервисе
+                a(class="footer__command-link" href="#") Наша команда
+                a(class="footer__vacancies-link" href="#") Вакансии
+                a(class="footer__investors-link" href="#") Инвесторы
+
+                h3(class="footer__support-header") Служба поддержки
+                a(class="footer__agreements-link" href="#") Соглашения
+                a(class="footer__community-link" href="#") Сообщества
+                a(class="footer__contact-link" href="#") Связь с нами
+
+                h3(class="footer__subscribe-header") Подписка
+                p(class="footer__subscribe-description") Получайте специальные предложения и новости сервиса
+                include ./footer/__subscription-text-field/footer__subscription-text-field.pug
+        

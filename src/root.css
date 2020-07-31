@@ -1,4 +1,5 @@
 @import "./header/header.css";
+@import "./footer/footer.css";
 
 html {
     font-size: 10px;
@@ -8,5 +9,5 @@ body {
     background-color: #E5E5E5;
     margin: 0;
     padding: 0;
-/*    width: 1440px;*/
+    margin-bottom: 300px;
 }
