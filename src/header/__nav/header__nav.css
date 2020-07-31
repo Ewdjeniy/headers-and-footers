@@ -1,0 +1,30 @@
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 44.7rem;
+}
+
+.header__nav-link {
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none;
+}
+
+.header__nav-link {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.header__services-menu, .header__agreements-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__services-menu {
+    margin-right: 1.05rem;
+}
+
+.header__services-arrow-down, .header__agreements-arrow-down {
+    @extend %material-icon;
+}
